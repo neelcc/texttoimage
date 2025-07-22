@@ -17,7 +17,13 @@ import lock_icon from './lock_icon.svg'
 import cross_icon from './cross_icon.svg'
 import star_group from './star_group.png'
 import credit_star from './credit_star.svg'
+import upload from './upload.svg'
 import profile_icon from './profile_icon.png'
+import pg from './pg.png'
+import upscale from './upscale.webp'
+import rimg from './rimg.webp'
+import rbg from './rbg.png'
+
 
 export const assets = {
     logo,
@@ -34,7 +40,12 @@ export const assets = {
     cross_icon,
     star_group,
     credit_star,
-    profile_icon
+    upload,
+    profile_icon,
+    pg,
+    rimg,
+    rbg,
+    upscale
 }
 
 export const stepsData = [
@@ -99,3 +110,32 @@ export const plans = [
       desc: 'Best for enterprise use.'
     },
   ]
+
+
+  export const featuresData = [
+    {
+      icon: upscale,
+      id: "/upscale" , // or use path to SVG/icon
+      title: "Image Upscaling",
+      description: "Enhance image quality and resolution without losing details."
+    },
+    {
+      icon: rbg,
+       id: "/remove-background" ,
+      title: "Remove Background",
+      description: "Easily remove backgrounds from any image with one click."
+    },
+    {
+      icon: pg,
+       id: "/product-photography" ,
+      title: "Product Photography",
+      description: "Generate clean, studio-style product shots instantly."
+    },
+    {
+      icon: rimg,
+       id: "/reimagine" ,
+      title: "Reimagine",
+      description: "Transform your image into unique styles and concepts."
+    }
+  ]
+  

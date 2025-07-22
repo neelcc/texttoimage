@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Login from './components/Login'
 import { AppContext } from './context/AppContext'
 import 'react-toastify/dist/ReactToastify.css'
+import Upscale from './pages/Upscale';
   
 
 
@@ -19,10 +20,11 @@ const App = () => {
       <ToastContainer position='bottom-right' />
       <Navbar/>
      { showLogin && <Login/> }
-
+    
 
    <Routes>
     <Route path="/" element = {<Home/>} />
+    <Route path="/features/upscale" element = {<Upscale/>} />
     <Route path="/result" element = {<Result/>} />
     <Route path="/buy" element = {<BuyCredit/>} />
    </Routes>
